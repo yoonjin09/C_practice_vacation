@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  int megabytes, usb2, time;
+  long bytes;
+  printf("파일 용량을 메가바이트 단위로 입력하세요. ");
+  scanf("%d",&megabytes);
+  printf("USB 포트가 2.0 이면 1, 아니면 2를 입력하세요. ");
+  scanf("%d",&usb2);
+  bytes=megabytes*1024*1024;
+  if(usb2 == 1){
+    time=bytes/60000000;
+    printf("파일 전송 시간은 %d초 입니다.",time);
+  }
+  else {
+    time=bytes/1500000;
+    printf("파일 전송 시간은 %d초 입니다.",time);
+  }
+  return 0;
+}
