@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+  int gigabytes;
+  int megabytes;
+  int kilobytes;
+  unsigned int bytes;
+  printf("File capacity in gigabytes? ");
+  scanf("%d",&gigabytes);
+  printf("File capacity is\n");
+  megabytes=gigabytes*1024;
+  printf("%d megabytes,\n",megabytes);
+  kilobytes=megabytes*1024;
+  printf("%d kilobytes,\n",kilobytes);
+  bytes=kilobytes*1024;
+  printf("%u bytes.",bytes);
+  return 0;
+}
