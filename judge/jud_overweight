@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  int height, weight;
+  float bmi;
+  printf("height? ");
+  scanf("%d",&height);
+  
+  printf("weight? ");
+  scanf("%d",&weight);
+  bmi= weight*100*100/(height*height);
+  if(bmi >= 25){
+    printf("You are overweight.");
+  }
+  else if(bmi < 25){
+    printf("You are not overweight.");
+  }
+  return 0;
+}
