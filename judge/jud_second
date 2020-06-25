@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+  int days;
+  int seconds;
+  int m_count;
+  
+  printf("날 수는? ");
+  scanf("%d",&days);
+  seconds=days*24*60*60;
+  printf("날 수에 해당되는 기간은 모두 %d초입니다.\n",seconds);
+  m_count=seconds/1000000;
+  if(seconds>999999){
+    printf("100만 초가 모두 %d이나 포함됩니다.",m_count);
+  }
+  return 0;
+}
