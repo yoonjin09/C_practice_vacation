@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+  float input_dgree;
+  printf("degree? ");
+  scanf("%f",&input_dgree);
+  if(input_dgree<0) printf("잘못입력 ");
+  else if(input_dgree<25) printf("냉수 ");
+  else if(input_dgree<40) printf("미온수 ");
+  else if(input_dgree<80) printf("온수 ");
+  else printf("끓는 물");
+  printf("입니다.");
+  return 0;
+}
